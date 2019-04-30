@@ -1,4 +1,4 @@
-// coarse alignment in c program benjamin_2019/04/25_22:56
+// coarse alignment in c program benjamin_2019/04/30_17:12
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -92,7 +92,7 @@ int GNC_coarse_alignment_Update(KVH_Readings_t KVHdata){
 	return 0;
 }
 
-// algorithm
+// algorithm sixdof data for algorithm, result is the initial value of INS
 void GNC_coarse_alignment_Finish(double *result, double *SixDOF_data){
 	// file reading: dynamic memory for time and 6DOF data----------------------
 	int size = 60000; // enter the size of data ***
